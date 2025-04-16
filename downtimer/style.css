@@ -1,0 +1,99 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  background-image:url(../image/img/time.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.body {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 40px 100px;
+  border-radius: 15px;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: hsl(341, 95%, 59%); 
+}
+
+.inputs {
+  margin-bottom: 20px;
+}
+
+label {
+margin: 20px;
+  font-size: 17px;
+}
+
+input[type="datetime-local"] {
+  padding: 10px 15px; 
+  font-size: 1em;
+  border: 1px solid hsl(341, 95%, 59%); 
+  border-radius: 20px; 
+  margin-right: 10px;
+  transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+/* Style for input on focus */
+input[type="datetime-local"]:focus {
+  border-color: hsl(341, 95%, 59%); 
+  box-shadow: 0 0 5px rgba(192, 57, 43, 0.5); 
+  outline: none; 
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: hsl(341, 95%, 59%); 
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; 
+}
+
+button:hover {
+  background-color: hsl(341, 97%, 36%); 
+  transform: scale(1.05); 
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.timer span {
+  margin: 0 10px;
+  padding: 20px;
+  border: 1px solid #e74c3c;
+  border-radius: 8px;
+}
+
+/* Countdown message */
+#countdown-message {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #e74c3c; 
+}
